@@ -1,0 +1,26 @@
+extends inicio
+
+block formulario 
+    div(class="jumbotron")
+        h1(style="color:blue;")="Ingrese datos"
+        br
+
+        form(action="/productos" method="post")
+
+            div(class="form-group")
+                label(for="producto")="Producto"
+                input(id="producto" class="form-control" type="text" name="producto")
+
+            div(class="form-group")
+                label(for="precio")="Precio"
+                input(id="precio" class="form-control" type="number" name="precio")
+
+            div(class="form-group")
+                label(for="url")="URL"
+                input(id="url" class="form-control" type="text" name="url")
+
+            button(class="btn btn-success mt-3 mb-5")="Enviar"
+
+
+        form(action="/productos" method="get")
+            button(class="btn btn-success mt-3 mb-5")="Ir a Historial"

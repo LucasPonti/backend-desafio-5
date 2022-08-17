@@ -1,0 +1,1 @@
+Me resulto mas practico utilizar ejs ya que se asemeja mas a la implementacion de html y javascript
